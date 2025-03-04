@@ -4,7 +4,8 @@ That project help you,you can know electricity come or not
 
 ## 📸 Preview
 
-![Alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fnature&psig=AOvVaw3NCHgujlCEz-RGS_QaNG_0&ust=1741169153656000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCE59mW8IsDFQAAAAAdAAAAABAE)
+![Mee Lar Larr](Mee-Lar-Larr.jpg)
+
 ---
 
 ## 📂 Project Structure
