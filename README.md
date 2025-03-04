@@ -43,11 +43,11 @@ Mee-Lar-Larr/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/AungPyaeSonOo/Mee-Lar-Larr.git
    ```
 2. Navigate into the project folder:
    ```bash
-   cd project-name
+   cd Mee-Lar-Larr
    ```
 3. Install dependencies:
    ```bash
@@ -64,7 +64,7 @@ Mee-Lar-Larr/
 1. Click the **Fork** button on the top right of this repository.
 2. Clone the forked repository:
    ```bash
-   git clone https://github.com/AungPyaeSonOo/မီးလာလား.git
+   git clone https://github.com/AungPyaeSonOo/Mee-Lar-Larr.git
    ```
 3. Create a new branch for your changes:
    ```bash
@@ -86,8 +86,8 @@ Mee-Lar-Larr/
 
 If you have any questions or suggestions, feel free to reach out:
 - **Email:** aungpyaesonoo002@gmail.com
-- **GitHub:** [your-username](https://github.com/AungPyaeSonOo)
-- **LinkedIn:** [your-profile](https://linkedin.com/in/your-profile)
+- **GitHub:** [AungPyaeSonOo](https://github.com/AungPyaeSonOo)
+- **LinkedIn:** [Aung Pyae Son Oo](www.linkedin.com/in/aung-pyae-son-oo-635761354)
 
 ---
 
