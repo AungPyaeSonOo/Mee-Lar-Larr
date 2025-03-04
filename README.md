@@ -4,7 +4,8 @@ That project help you,you can know electricity come or not
 
 ## 📸 Preview
 
-![Mee Lar Larr](Mee-Lar-Larr.jpg)
+![Mee-Lar-larr](Mee-Lar-Larr.jpg)
+
 
 ---
 
