@@ -1,0 +1,27 @@
+{
+  "name": "mee-lar-larr",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "howler": "^2.2.4",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.8",
+    "react-calendar": "^5.1.0",
+    "react-datepicker": "^7.6.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.4",
+    "tailwind": "^4.0.0"
+  }
+}

@@ -1,0 +1,511 @@
+.schedule-message {
+  font-size: 2rem;
+  color: #00e910;
+  font-weight: bold;
+}
+
+.schedule-h3-message {
+  font-size: 1.5rem;
+  color: #e40e0e;
+  font-weight: bold;
+}
+
+.schedule {
+  font-size: 2rem;
+  color: #00e910;
+  font-weight: bold;
+}
+
+.timer-container {
+  background: #070101;
+  border-radius: 20px;
+  padding: 40px;
+  display: inline-block;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bold-timer {
+  font-size: 7rem;
+  font-family: "Helvetica", sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+  animation: boldGlowPulse 2s infinite alternate;
+}
+
+@keyframes boldGlowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+      0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Calendar Container */
+
+.calendar-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: relative;
+}
+
+.calendar-header-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-link {
+  color: #28a745;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.back-link:hover {
+  color: #218838;
+}
+
+.calendar {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.calendar-day {
+  padding: 10px;
+  background: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendar-day.active {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  font-weight: bold;
+  border: 2px solid #222;
+}
+
+.calendar-day.today {
+  background-color: #00ec1c;
+  color: #222;
+  font-weight: bold;
+}
+
+.schedule-details {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.schedule-details strong {
+  font-size: 1.2rem;
+}
+
+.schedule-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.schedule-buttons .btn {
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .calendar-page-container {
+    padding: 20px;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .calendar-page-container {
+    padding: 15px;
+  }
+
+  .back-link {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .calendar {
+    width: 95%;
+    margin-top: 60px;
+  }
+
+  .calendar-header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .calendar-day {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .calendar-page-container {
+    padding: 25px;
+  }
+
+  .calendar {
+    width: 90%;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .calendar-page-container {
+    padding: 90px;
+  }
+
+  .calendar {
+    width: 45%;
+    margin-top: 15px;
+  }
+}
+
+/*======================== Calendar Show ========================*/
+
+
+/*======================= Calendar Button ======================= */
+.calendar-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 12px 18px;
+  background: linear-gradient(to top, #48A2B7, #217695);
+  color: white;
+  border: 2px solid #48A2B7;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+
+.calendar-button:active {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(3px);
+}
+
+@media screen and (max-width: 1200px) {
+  .calendar-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calendar-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .calendar-button {
+    padding: 6px 10px;
+    font-size: 10px;
+    right: 120px;
+    top: 45px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 282px) {
+  .calendar-button {
+    padding: 6px 10px;
+    top: 65px;
+    right: 50px;
+    font-size: 10px;
+  }
+}
+
+.notification-button {
+  position: absolute;
+  top: 17px;
+  right: 130px;
+  background-color: #48A2B7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.notification-button:hover {
+  background-color: #047297;
+}
+
+.notification-button .fa-bell {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .notification-button {
+    top: 10px;
+    right: 80px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .notification-button {
+    top: 45px;
+    right: 180px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .notification-button {
+    top: 65px;
+    right: 100px;
+    padding: 8px;
+  }
+}
+
+/*======================= Calendar Button ======================= */
+
+.notification-button .notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .schedule-message {
+    font-size: 1.5rem;
+  }
+
+  .schedule-h3-message {
+    font-size: 1.25rem;
+  }
+
+  .bold-timer {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule-message {
+    font-size: 2rem;
+
+    .schedule-h3-message {
+      font-size: 1.5rem;
+    }
+
+    .bold-timer {
+      font-size: 7rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-12.col-sm-4 {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-12.col-sm-4 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+/* For Notification Shaking*/
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out; 
+}
+
+.notification-text {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+
+/**/
+
+.schedule-table {
+  background-color: #343a40;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.schedule-table-content {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.schedule-table-content th,
+.schedule-table-content td {
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.table-header-on {
+  background-color: #28a745;
+  color: white;
+}
+
+.table-header-off {
+  background-color: #dc3545;
+  color: white;
+}
+
+.schedule-table-content tr:nth-child(even) {
+  background-color: #2a2e35;
+}
+
+.schedule-table-content tr:nth-child(odd) {
+  background-color: #212529;
+}
+
+.schedule-table-content tr:hover {
+  background-color: #495057;
+}
+
+
+
