@@ -87,7 +87,7 @@ Mee-Lar-Larr/
 If you have any questions or suggestions, feel free to reach out:
 - **Email:** aungpyaesonoo002@gmail.com
 - **GitHub:** [AungPyaeSonOo](https://github.com/AungPyaeSonOo)
-- **LinkedIn:** [AungPyaeSonOo](www.linkedin.com/in/aung-pyae-son-oo-635761354)
+- **LinkedIn:** [AungPyaeSonOo](https://www.linkedin.com/in/aung-pyae-son-oo-635761354)
 
 ---
 
